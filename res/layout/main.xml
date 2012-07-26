@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sap="http://schemas.android.com/apk/res/com.luciofm.presentation.androidsalao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:clipChildren="false"
+        android:clipToPadding="false" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false" >
+
+            <com.luciofm.presentation.androidsalao.presentation.DisplayLayout
+                android:id="@+id/displayView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                sap:inAnimation="@anim/slideinright"
+                sap:outAnimation="@anim/slideoutleft"
+                android:padding="40dp"
+                sap:slides="slides.json"
+                android:visibility="visible" >
+            </com.luciofm.presentation.androidsalao.presentation.DisplayLayout>
+
+            <LinearLayout
+                android:id="@id/waiting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" 
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"
+                    android:padding="@dimen/padding" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
+                    android:text="Waiting for controller..."
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

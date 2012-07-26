@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.luciofm.presentation.androidsalao.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sap="http://schemas.android.com/apk/res/com.luciofm.presentation.androidsalao"
+    android:id="@id/slide"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    sap:notes="Falar da diferença de padrões de Design. Android é algo mais digital, não imita materiais reais... " >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+            style="@style/Widget.TextView.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E outros muito bonitos"
+            android:gravity="center_horizontal"
+            sap:gonePhase="1"
+            sap:hideAnimation="@anim/fadeout"
+            sap:showAnimation="@anim/slideinleftdelayed"
+            sap:showPhase="0" />
+
+        <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+            style="@style/Widget.TextView.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="E outros muito bonitos"
+            android:visibility="invisible"
+            sap:showPhase="1" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/beauty1"
+                android:visibility="invisible"
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="1" />
+
+            <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/beauty2"
+                android:visibility="invisible"
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="2" />
+
+            <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/beauty3"
+                android:visibility="invisible"
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="3" />
+        </LinearLayout>
+    </FrameLayout>
+
+</com.luciofm.presentation.androidsalao.presentation.SlideLayout>

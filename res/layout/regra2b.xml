@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.luciofm.presentation.androidsalao.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sap="http://schemas.android.com/apk/res/com.luciofm.presentation.androidsalao"
+    android:id="@id/slide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="8dp"
+    sap:notes="Falar da importancia, mesmo para um developer de ler os guidelines de Design. -Trabalhar sempre com posições relativas, DP, SP. -LinearLayout é ótimo para layouts responsivos, trabalha com proporções.  -Touch feedback usar android:exitFadeDuration e android:enterFadeDuration para animar as transições de estado. -A partir do 3.0. -Use os icones pradrão do sistema para ações padrão, como refresh, adicionar, remover, share, etc"
+    sap:tweet="#TDC2012 #Android http://developer.android.com/design - muito importante" >
+
+    <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+        style="@style/Widget.TextView.XLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Guidelines"
+        android:textStyle="bold"
+        sap:highlightTextAppearance="@style/Widget.TextView.Large.Highlight"
+        sap:pattern="(.*)"
+        sap:showAnimation="@anim/slideinright" />
+
+    <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Small.Highlight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="developer.android.com/design"
+        sap:showAnimation="@anim/slideinleft"
+        sap:showPhase="1" />
+
+    <FrameLayout
+        android:id="@+id/framee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+                style="@style/Widget.TextView.Medium.Highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="left"
+                android:text="- Considere utilizar uma ActionBar."
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="2" />
+
+            <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+                style="@style/Widget.TextView.Medium.Highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:text="- Considere basear seu tema em dos temas Holo."
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="3" />
+
+            <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+                style="@style/Widget.TextView.Medium.Highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:text="- Touch Feedback - responda visualmente a toques ."
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="4" />
+
+            <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+                style="@style/Widget.TextView.Medium.Highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:text="- Seja relativo. Textos SP e dimensões DP."
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="5" />
+
+            <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+                style="@style/Widget.TextView.Medium.Highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:text="- Iconografia - Siga o padrão da plataforma..."
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="6" />
+
+            <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+                style="@style/Widget.TextView.Medium.Highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:text="- Use gestos, como swype lateral para tabs."
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="7" />
+        </LinearLayout>
+    </FrameLayout>
+
+</com.luciofm.presentation.androidsalao.presentation.SlideLayout>

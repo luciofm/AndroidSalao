@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.luciofm.presentation.androidsalao.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sap="http://schemas.android.com/apk/res/com.luciofm.presentation.androidsalao"
+    android:id="@id/slide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    sap:notes="Lembrar sobre live Tweets... -Estou aqui para falar de Android, mais especificamente em como melhorar seus aplicativos Android." >
+
+    <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Large"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="Android no Salão de Beleza!"
+        android:textStyle="bold"
+        sap:highlightTextAppearance="@style/Widget.TextView.Large.Highlight"
+        sap:showAnimation="@anim/slideinright"
+        sap:pattern="(.*)"
+        sap:showPhase="1" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/droids"
+            sap:gonePhase="1"
+            sap:hideAnimation="@anim/fadeout" />
+
+        <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/droids_salao"
+            android:visibility="invisible"
+            sap:showAnimation="@anim/fadein"
+            sap:showPhase="1" />
+    </FrameLayout>
+
+    <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Medium.Highlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="(ou dando um up no visual de seu aplicativo)"
+        android:visibility="invisible"
+        sap:showAnimation="@anim/slideinleft"
+        sap:showPhase="2" />
+
+</com.luciofm.presentation.androidsalao.presentation.SlideLayout>

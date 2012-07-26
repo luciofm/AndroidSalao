@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.luciofm.presentation.androidsalao.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sap="http://schemas.android.com/apk/res/com.luciofm.presentation.androidsalao"
+    android:id="@id/slide"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    sap:notes="Vejam o caso do Netflix. Esse é o aplicativo Android deles. -Tabs horriveis, apesar de serem 'padrão' no Android. por favor, customize suas tabs. -Lista com carrets, e muito espaço em Branco. -Agora olha uma versão melhorada, utilizando ActionBar com navegação por tabs. -Sim, as tabs fazem parte da ActionBar. -Lista utilizando o espaçamento padrão do Android, sem 'flechinha'. -Navegação com swype horizontal. -Próximo exemplo Twitter." >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+            style="@style/Widget.TextView.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="        Esse???                          "
+            sap:hidePhase="1" />
+
+        <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+            style="@style/Widget.TextView.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="  Esse???                  Ou esse???"
+            sap:showPhase="1" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/netflix_bad"/>
+
+            <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/netflix_good"
+                android:visibility="invisible"
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="1" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</com.luciofm.presentation.androidsalao.presentation.SlideLayout>

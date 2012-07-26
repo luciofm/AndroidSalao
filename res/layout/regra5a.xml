@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.luciofm.presentation.androidsalao.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sap="http://schemas.android.com/apk/res/com.luciofm.presentation.androidsalao"
+    android:id="@id/slide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    sap:notes="Seja suave.. De nada adianta uma interface muito bonita se ela é lenta. -Sua lista precisa rolar suavemente, não podem haver pausas no aplicativo." >
+
+    <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+        style="@style/Widget.TextView.XLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Regra nº 5"
+        android:textStyle="bold"
+        sap:highlightTextAppearance="@style/Widget.TextView.Large.Highlight"
+        sap:pattern="(.*)"
+        sap:showAnimation="@anim/slideinright" />
+
+    <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Seja Suave"
+        android:textStyle="bold"
+        sap:showAnimation="@anim/fadein"
+        sap:showPhase="1" />
+
+</com.luciofm.presentation.androidsalao.presentation.SlideLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.luciofm.presentation.androidsalao.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sap="http://schemas.android.com/apk/res/com.luciofm.presentation.androidsalao"
+    android:id="@id/slide"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    sap:notes="Bottom Tabs muito mais para iOS do que Android. Bottom tabs, Barra superior iOS. Carrets na lista. Tabs, barra superior iOS, mal feita por sinal... etc" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+            style="@style/Widget.TextView.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Nem isso...."/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/dont_do4"
+                android:visibility="invisible"
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="1" />
+
+            <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/dont_do5"
+                android:visibility="invisible"
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="2" />
+
+            <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/dont_do6"
+                android:visibility="invisible"
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="3" />
+        </LinearLayout>
+    </FrameLayout>
+
+</com.luciofm.presentation.androidsalao.presentation.SlideLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.luciofm.presentation.androidsalao.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sap="http://schemas.android.com/apk/res/com.luciofm.presentation.androidsalao"
+    android:id="@id/slide"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+            style="@style/Widget.TextView.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E temos os exemplos..."
+            sap:hideAnimation="@anim/fadeout" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/game_center"
+                android:visibility="invisible"
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="1" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/find_my_phone"
+                    android:visibility="invisible"
+                    sap:showAnimation="@anim/fadein"
+                    sap:showPhase="2" />
+
+                <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jacket"
+                    android:visibility="invisible"
+                    sap:showAnimation="@anim/fadein"
+                    sap:showPhase="3" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</com.luciofm.presentation.androidsalao.presentation.SlideLayout>

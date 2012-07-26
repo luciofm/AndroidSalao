@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.luciofm.presentation.androidsalao.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sap="http://schemas.android.com/apk/res/com.luciofm.presentation.androidsalao"
+    android:id="@id/slide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    sap:notes="Não sou designer, essa palestra serve tanto para Devs quanto para designers. Diversos designers da area mobile, são usuários iOS, por isso um DEV deve entender como funciona um app Android. Quais suas guidelines, entender a navegação de um aplicativo, saber diferenciar um bom design Android de um ruim." >
+
+    <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Large"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="IANAD*"
+        android:textStyle="bold"
+        sap:highlightTextAppearance="@style/Widget.TextView.Large.Highlight"
+        sap:showAnimation="@anim/slideinright"
+        sap:pattern="(.*)"/>
+
+    <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Small"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="(* I Am Not A Designer)"
+        android:textStyle="bold"
+        sap:showAnimation="@anim/fadein"
+        sap:showPhase="1"/>
+
+</com.luciofm.presentation.androidsalao.presentation.SlideLayout>

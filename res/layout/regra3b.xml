@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.luciofm.presentation.androidsalao.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sap="http://schemas.android.com/apk/res/com.luciofm.presentation.androidsalao"
+    android:id="@id/slide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="8dp"
+    sap:notes="Quem é o melhor candidato para mostrar o seu conteúdo??? a sua APP." xmlns:app="http://schemas.android.com/apk/res/com.stylingandroid.presenterlite">
+
+    <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+        style="@style/Widget.TextView.XLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Não reinvente a Roda!"
+        android:textStyle="bold"
+        sap:highlightTextAppearance="@style/Widget.TextView.Large.Highlight"
+        sap:pattern="(.*)"
+        sap:showAnimation="@anim/slideinright" />
+
+    <FrameLayout
+        android:id="@+id/framee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+                style="@style/Widget.TextView.Medium.Highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="left"
+                android:text="- Use o sistema de Sharing do Android."
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="1" />
+
+            <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+                style="@style/Widget.TextView.Medium.Highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:text="- Sério, use os sistema de sharing do Android."
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="2" />
+
+            <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+                style="@style/Widget.TextView.Medium.Highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:text="- Intents também servem para visualizar conteúdos.\n   Use Intent.ACTION_VIEW para abrir urls, videos, fotos"
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="3" />
+
+            <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+                style="@style/Widget.TextView.Medium.Highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:text="- O botão back já tem um propósito bem definido, não reinvente seu comportamento"
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="4" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</com.luciofm.presentation.androidsalao.presentation.SlideLayout>

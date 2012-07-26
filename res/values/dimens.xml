@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="padding">20dp</dimen>
+    <dimen name="spacing">20dp</dimen>
+
+    <integer name="fastDelay">200</integer>
+    <integer name="fastAnim">750</integer>
+    <integer name="slowAnim">1500</integer>
+
+    <dimen name="textSizeXLarge">100sp</dimen>
+    <dimen name="textSizeLarge">72sp</dimen>
+    <dimen name="textSizeMedium">48sp</dimen>
+    <dimen name="textSizeSmall">36sp</dimen>
+    <dimen name="textSizeCode">24sp</dimen>
+    <dimen name="border_width">3dp</dimen>
+
+</resources>

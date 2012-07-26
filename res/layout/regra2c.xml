@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.luciofm.presentation.androidsalao.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sap="http://schemas.android.com/apk/res/com.luciofm.presentation.androidsalao"
+    android:id="@id/slide"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    sap:notes="Explicar a ActionBar, sua importancia. -Principal componente de navegação. -Suporte a TABS, Dropdown, e Custom navigations. -Substitui o botao de menu. -A seguir exemplos de como seu uso em conjunto com os guidelines de design podem melhorar o visual de um aplicativo."
+    sap:tweet="#TDC2012 #Android ActionBarSherlock, ActionBar love for Android 2.0+ http://abs.io" >
+
+    <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="ActionBar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+            style="@style/Widget.TextView.Medium.Highlight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Disponível a partir do Android 3.0 - Honeycomb"
+            sap:hideAnimation="@anim/slideoutleft"
+            sap:hidePhase="2"
+            sap:showAnimation="@anim/fadein"
+            sap:showPhase="1" />
+
+        <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+            style="@style/Widget.TextView.Medium.Highlight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Disponível a partir do Android 2.0 - Eclair"
+            sap:showAnimation="@anim/slideinright"
+            sap:showPhase="2" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/framee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+                style="@style/Widget.TextView.Medium.Highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="left"
+                android:text="- ActionBarSherlock - http://abs.io"
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="2" />
+
+            <com.luciofm.presentation.androidsalao.presentation.RunCodeView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                sap:function="showActionBar"
+                sap:runPhase="1" />
+
+            <com.luciofm.presentation.androidsalao.presentation.RunCodeView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                sap:function="tweetFunction"
+                sap:argument="ActionBarSherlock - http://abs.io #TDC2012 #Android"
+                sap:runPhase="0" />
+
+            <com.luciofm.presentation.androidsalao.presentation.RunCodeView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                sap:function="hideActionBar"
+                sap:runPhase="5" />
+
+            <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+                style="@style/Widget.TextView.Medium.Highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:text="- Principal componente de navegação da App."
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="3" />
+
+            <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+                style="@style/Widget.TextView.Medium.Highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:text="- Tabs, Dropdown, ou custom."
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="4" />
+
+            <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+                style="@style/Widget.TextView.Medium.Highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:text="- Substitui o botão menu em tablets e no Galaxy Nexus"
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="5" />
+        </LinearLayout>
+    </FrameLayout>
+
+</com.luciofm.presentation.androidsalao.presentation.SlideLayout>

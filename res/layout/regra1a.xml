@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.luciofm.presentation.androidsalao.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sap="http://schemas.android.com/apk/res/com.luciofm.presentation.androidsalao"
+    android:id="@id/slide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="8dp"
+    sap:notes="Essa é uma das regras mais importantes no Android. Nunca, mas NUNCA use assets do iOS ou WP no Android. Não faça um aplicativo que não pareça Android, que não seja natural no Android. Siga os padrões da plataforma... Isso gera coerencia entre os aplicativos. O usuário vai se sentir confortavel ao usar seu aplicativo." >
+
+    <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+        style="@style/Widget.TextView.XLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Regra nº 1"
+        android:textStyle="bold"
+        sap:highlightTextAppearance="@style/Widget.TextView.Large.Highlight"
+        sap:pattern="(.*)"
+        sap:showAnimation="@anim/slideinright" />
+
+    <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Large.Highlight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Uma coisa é uma coisa"
+        sap:showAnimation="@anim/slideinleft"
+        sap:showPhase="1" />
+
+    <FrameLayout
+        android:id="@+id/framee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="120dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+                style="@style/Widget.TextView.Medium.Highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="left"
+                android:text="- Não use assets de outras plataformas."
+                sap:showAnimation="@anim/fadein"
+                sap:gonePhase="6"
+                sap:showPhase="2" />
+
+            <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+                style="@style/Widget.TextView.Medium.Highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:text="- NUNCA coloque um botão voltar na tela."
+                sap:showAnimation="@anim/fadein"
+                sap:gonePhase="6"
+                sap:showPhase="3" />
+
+            <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+                style="@style/Widget.TextView.Medium.Highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:text="- Não use &apos;bottom tabs&apos;."
+                sap:showAnimation="@anim/fadein"
+                sap:gonePhase="6"
+                sap:showPhase="4" />
+
+            <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+                style="@style/Widget.TextView.Medium.Highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:text="- NUNCA (e digo NUNCA mesmo) faça um App com cara de iOS."
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="5"
+                sap:gonePhase="6" />
+        </LinearLayout>
+
+        <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/migrating_ui_elements"
+            sap:showAnimation="@anim/zoomin"
+            sap:showPhase="6" />
+    </FrameLayout>
+
+</com.luciofm.presentation.androidsalao.presentation.SlideLayout>

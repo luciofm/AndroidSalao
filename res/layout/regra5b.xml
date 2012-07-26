@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.luciofm.presentation.androidsalao.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sap="http://schemas.android.com/apk/res/com.luciofm.presentation.androidsalao"
+    android:id="@id/slide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="8dp"
+    sap:notes="Qualquer código na UI Thread precisa rodar em 16ms, mencionar ViewHoler, memory Cache, etc.. -Não adianta ser bonito se a interface é travada.." >
+
+    <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+        style="@style/Widget.TextView.XLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Na UI Thread está PROIBIDO:"
+        android:textStyle="bold"
+        sap:highlightTextAppearance="@style/Widget.TextView.Large.Highlight"
+        sap:pattern="(.*)"
+        sap:showAnimation="@anim/slideinright" />
+
+    <FrameLayout
+        android:id="@+id/framee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+                style="@style/Widget.TextView.Medium.Highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="left"
+                android:text="- Qualquer tipo de I/O, disco ou rede."
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="1" />
+
+            <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+                style="@style/Widget.TextView.Medium.Highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:text="- Processamento de imagens."
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="2" />
+
+            <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+                style="@style/Widget.TextView.Medium.Highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:text="- Qualquer código que demore mais do que 16ms."
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="3" />
+
+            <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+                style="@style/Widget.TextView.Medium.Highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:text="- Todo processamento que não interfira na UI."
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="4" />
+
+            <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+                style="@style/Widget.TextView.Medium.Highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:text="- Muito cuidado com getView()/bindView() nos Adapters."
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="5" />
+        </LinearLayout>
+    </FrameLayout>
+
+</com.luciofm.presentation.androidsalao.presentation.SlideLayout>

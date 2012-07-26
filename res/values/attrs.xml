@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DisplayTheme">
+        <attr name="highlightCodeTextAppearance" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="SlideLayout">
+        <attr format="string|reference" name="tweet" />
+        <attr format="string|reference" name="notes" />
+        <attr format="reference" name="nextInAnimation" />
+        <attr format="reference" name="nextOutAnimation" />
+    </declare-styleable>
+    <declare-styleable name="DisplayLayout">
+        <attr format="string" name="slides" />
+        <attr format="reference" name="inAnimation" />
+        <attr format="reference" name="outAnimation" />
+    </declare-styleable>
+    <declare-styleable name="HighlightedTextView">
+        <attr name="android:text" />
+        <attr format="string" name="showPhase" />
+        <attr format="string" name="hidePhase" />
+        <attr format="string" name="gonePhase" />
+        <attr format="string|reference" name="pattern" />
+        <attr format="reference" name="showAnimation" />
+        <attr format="reference" name="hideAnimation" />
+        <attr format="reference" name="highlightTextAppearance" />
+    </declare-styleable>
+
+    <declare-styleable name="RunCodeView">
+        <attr format="string" name="runPhase" />
+        <attr format="string|reference" name="function" />
+        <attr format="string" name="argument" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.luciofm.presentation.androidsalao.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sap="http://schemas.android.com/apk/res/com.luciofm.presentation.androidsalao"
+    android:id="@id/slide"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    sap:notes="Lembrar sobre Skeumorphism, Confio em cofres feitos de madeira. E sempre uso um casaco indigena para procurar meus amigos. Falar de outros casos..." >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing" >
+
+        <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+            style="@style/Widget.TextView.Medium.Highlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(e isso não é exclusividade...)"
+            sap:hideAnimation="@anim/fadeout" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/game_center"
+                sap:hidePhase="6"
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="1" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bank1"
+                    sap:hidePhase="6"
+                    sap:showAnimation="@anim/fadein"
+                    sap:showPhase="2" />
+
+                <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bank2"
+                    sap:hidePhase="6"
+                    sap:showAnimation="@anim/fadein"
+                    sap:showPhase="3" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/find_my_phone"
+                    sap:hidePhase="6"
+                    sap:showAnimation="@anim/fadein"
+                    sap:showPhase="4" />
+
+                <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jacket"
+                    sap:hidePhase="6"
+                    sap:showAnimation="@anim/fadein"
+                    sap:showPhase="5" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ugly4"
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="6" />
+
+            <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ugly5"
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="7" />
+
+            <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ugly6"
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="8" />
+        </LinearLayout>
+    </FrameLayout>
+
+</com.luciofm.presentation.androidsalao.presentation.SlideLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lightestGrey">#F2F2F2</color>
+    <color name="lightGrey">#DDDDDD</color>
+    <color name="SAgreen">#0099CC</color>
+    <color name="grey">#7F7F7F</color>
+    <color name="highlight">@color/SAgreen</color>
+        
+    
+</resources>

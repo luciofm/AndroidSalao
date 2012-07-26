@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.luciofm.presentation.androidsalao.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sap="http://schemas.android.com/apk/res/com.luciofm.presentation.androidsalao"
+    android:id="@id/slide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    sap:nextInAnimation="@anim/zoomin"
+    sap:nextOutAnimation="@anim/fadeout"
+    android:orientation="vertical" >
+
+
+<!--     <ImageView -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:src="@drawable/question" /> -->
+
+    <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+		android:textColor="@color/highlight"
+        android:textSize="@dimen/question_text_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="\?"
+        android:textStyle="bold|italic"
+        android:shadowColor="#A0000000"
+        android:shadowDx="2.5"
+        android:shadowDy="2.5"
+        android:shadowRadius="4.5"
+        android:layout_marginTop="@dimen/question_padding"/>
+
+</com.luciofm.presentation.androidsalao.presentation.SlideLayout>

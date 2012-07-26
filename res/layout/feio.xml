@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.luciofm.presentation.androidsalao.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sap="http://schemas.android.com/apk/res/com.luciofm.presentation.androidsalao"
+    android:id="@id/slide"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    sap:notes="Muita gente diz que o Android é FEIO, e tem  muita gente perdendo dinheiro... Poderiam estar usando sua experiencia para melhorar os aplicativos Android. Android Era feio, passado. Beleza é relativo, eu particularmente não sou Fã da interface iOS. Muito skeumorphism, muito infantil..." >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+            style="@style/Widget.TextView.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Android é feio?"
+            android:visibility="invisible"
+            sap:showPhase="0"
+            sap:showAnimation="@anim/slideinleftdelayed"
+            sap:gonePhase="3"
+            sap:hideAnimation="@anim/slideoutleft" />
+
+        <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+            style="@style/Widget.TextView.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Android era feio"
+            android:visibility="gone"
+            sap:showAnimation="@anim/slideinright"
+            sap:showPhase="3" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/android_feio"
+            android:visibility="invisible"
+            sap:gonePhase="2"
+            sap:hideAnimation="@anim/fadeout"
+            sap:showAnimation="@anim/fadein"
+            sap:showPhase="1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/g1"
+                android:visibility="invisible"
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="2" />
+
+            <com.luciofm.presentation.androidsalao.presentation.PhasableImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/galaxy_nexus"
+                android:visibility="invisible"
+                sap:showAnimation="@anim/fadein"
+                sap:showPhase="3" />
+        </LinearLayout>
+    </FrameLayout>
+
+</com.luciofm.presentation.androidsalao.presentation.SlideLayout>

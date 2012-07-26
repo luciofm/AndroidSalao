@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.luciofm.presentation.androidsalao.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sap="http://schemas.android.com/apk/res/com.luciofm.presentation.androidsalao"
+    android:id="@id/slide"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    sap:tweet="Testando twitter na apresentação..."
+    sap:notes="Agradecer todo mundo que está ali... Falar da Zynk um pouco, startup na area de conteudo, comunicação coorporativa, etc" >
+
+    <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/spacing"
+        android:text="Lucio Maciel / @luciofm\nluciofm.com/+"
+        sap:highlightTextAppearance="@style/Widget.TextView.Large.Highlight" />
+
+    <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/spacing"
+        android:text="Desenvolvedor Android na Zynk (http://zynk.mobi)"
+        android:visibility="invisible"
+        sap:showAnimation="@anim/fadein"
+        sap:showPhase="1" />
+
+    <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/spacing"
+        android:text="12+ anos experiência em Desenvolvimento de software"
+        android:visibility="invisible"
+        sap:showAnimation="@anim/fadein"
+        sap:showPhase="2" />
+
+    <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/spacing"
+        android:text="C, C++, Linux (Userspace/Kernelspace), Networking, Virtualization, etc..."
+        android:visibility="invisible"
+        sap:showAnimation="@anim/fadein"
+        sap:showPhase="3" />
+
+    <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/spacing"
+        android:text="Larguei o underground pelo Mainstream mobile."
+        android:visibility="invisible"
+        sap:showPhase="4" />
+
+    <com.luciofm.presentation.androidsalao.presentation.RunCodeView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        sap:argument="Agradecer todo mundo que está ali... Falar da Zynk um pouco, startup na area de conteudo, comunicação coorporativa, etc"
+        sap:function="noteFunction"
+        sap:runPhase="1" />
+
+</com.luciofm.presentation.androidsalao.presentation.SlideLayout>

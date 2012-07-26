@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.luciofm.presentation.androidsalao.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sap="http://schemas.android.com/apk/res/com.luciofm.presentation.androidsalao"
+    android:id="@id/slide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    sap:notes="Certo, a gente viu que existem aplicativos feios, e aplicativos bonitos. Em ambas plataformas... Mas agora, como fazemos para chegar la? para deixar os nossos aplicativos bonitos." >
+
+    <com.luciofm.presentation.androidsalao.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Large"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="E como chegar lá???"
+        android:textStyle="bold"
+        sap:highlightTextAppearance="@style/Widget.TextView.Large.Highlight"
+        sap:showAnimation="@anim/slideinright"
+        sap:pattern="(.*)"/>
+
+
+</com.luciofm.presentation.androidsalao.presentation.SlideLayout>
